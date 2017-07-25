@@ -9,7 +9,8 @@ import { TooltipBox } from './tooltip-box.component';
   selector: '[tooltip]',
   host: {
     '(press)': 'event === "press" && trigger()',
-    '(click)': 'event === "click" && trigger()'
+    '(click)': 'event === "click" && trigger()',
+      '(mouseenter)':'event === "click" && trigger()'
   }
 })
 export class Tooltip {
