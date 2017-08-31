@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { IonicModule } from 'ionic-angular';
 import { Tooltip } from './tooltip.directive';
 import { TooltipBox } from './tooltip-box.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   entryComponents: [
@@ -13,8 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         TooltipBox,
     ],
     imports: [
-      IonicModule,
-      BrowserAnimationsModule
+      IonicModule
     ],
     exports: [
       Tooltip
